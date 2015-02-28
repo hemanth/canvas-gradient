@@ -1,7 +1,7 @@
-# canvas-gradient
+# canvas-gradient 
+> Gradient with canvas.
 
-(https://travis-ci.org/hemanth/canvas-gradient) [![npm version](https://badge.fury.io/js/canvas-gradient.svg)](http://badge.fury.io/js/canvas-gradient)
-> Clear canvas.
+[![npm version](https://badge.fury.io/js/canvas-gradient.svg)](http://badge.fury.io/js/canvas-gradient)
 
 ## Installation
 
@@ -36,6 +36,8 @@ cnvsGrad(ctx, gx1, gy1, gx2, gy2, colorStops, fx, fy, fw, fh)
 * fw -> Fill width.   [Optional param, defaults to canvas.width]
 
 * fh -> Fill height.  [Optional param, defaults to canvas.height]
+
+---
 
 Checkout the live [demo](http://requirebin.com/?gist=020e9257b98e22fa90ee).
 
