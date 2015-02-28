@@ -1,6 +1,6 @@
 {
   "name": "canvas-gradient",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Clear Canvas.",
   "main": "index.js",
   "scripts": {
