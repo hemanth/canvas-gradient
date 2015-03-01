@@ -16,7 +16,7 @@ var cnvsGrad = require('canvas-gradient');
 cnvsGrad(ctx, fx, fy, fw, fh).linear(gx1, gy1, gx2, gy2, colorStops);
 
 // For radial gradient.
-cnvsGrad(ctx, fx, fy, fw, fh).linear(gx1, gy1, gx2, gy2, colorStops);
+cnvsGrad(ctx, fx, fy, fw, fh).linear(x0, y0, r0, x1, y1, r1);
 
 ```
 
@@ -88,7 +88,8 @@ var cs = [
 // Draw gradient.
 cnvsGrad(ctx).linear(0,0,500,0,cs);
 
-// Similarly for radial cnvsGrad(ctx).radial(100,100,100,0,cs);
+// Similarly for radial 
+cnvsGrad(ctx).radial(100,100,100,0,cs);
 
 ```
 
