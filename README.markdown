@@ -12,12 +12,29 @@
 ```js
 var cnvsGrad = require('canvas-gradient');
 
-cnvsGrad(ctx, gx1, gy1, gx2, gy2, colorStops, fx, fy, fw, fh) 
+// For linear gradient.
+cnvsGrad(ctx, fx, fy, fw, fh).linear(gx1, gy1, gx2, gy2, colorStops);
+
+// For radial gradient.
+cnvsGrad(ctx, fx, fy, fw, fh).linear(gx1, gy1, gx2, gy2, colorStops);
+
 ```
 
 ## API 
 
+__Setup:__
+
 * ctx -> canvas 2D context.
+
+* fx -> Fill start-x. [Optional param, defaults to 0]
+
+* fy -> Fill start-y. [Optional param, defaults to 0]
+
+* fw -> Fill width.   [Optional param, defaults to canvas.width]
+
+* fh -> Fill height.  [Optional param, defaults to canvas.height]
+
+__For linear:__
 
 * gx1 -> Gradiant start-x.
 
@@ -29,13 +46,19 @@ cnvsGrad(ctx, gx1, gy1, gx2, gy2, colorStops, fx, fy, fw, fh)
 
 * colorStops -> [{color,position}...]
 
-* fx -> Fill start-x. [Optional param, defaults to 0]
+__For radail:__
 
-* fy -> Fill start-y. [Optional param, defaults to 0]
+* x0 -> x-axis for start circle.
 
-* fw -> Fill width.   [Optional param, defaults to canvas.width]
+* y0 -> y-axis for end circle.
 
-* fh -> Fill height.  [Optional param, defaults to canvas.height]
+* r0 -> Radius of the start circle.
+
+* x1 -> x-axis of the end circle.
+
+* y1 -> y-axis of the end circle.
+
+* r1 -> Radius of the end circle.
 
 ---
 
@@ -43,8 +66,7 @@ Checkout the live [demo](http://requirebin.com/?gist=020e9257b98e22fa90ee).
 
 
 ```js
-var cnvsGrad = require('canvas-gradient');
-
+var cnvsGrad = require('canvas-gradaint');
 
 //canvas setup
 var canvas  =  document.createElement('canvas');
@@ -64,7 +86,9 @@ var cs = [
 ];
 
 // Draw gradient.
-cnvsGrad(ctx,0,0,500,0,cs);
+cnvsGrad(ctx).linear(0,0,500,0,cs);
+
+// Similarly for radial cnvsGrad(ctx).radial(100,100,100,0,cs);
 
 ```
 
