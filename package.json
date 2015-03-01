@@ -1,7 +1,7 @@
 {
   "name": "canvas-gradient",
   "version": "2.0.0",
-  "description": "Clear Canvas.",
+  "description": "Gradient with canvas.",
   "main": "index.js",
   "scripts": {
     "test": "gulp test"
