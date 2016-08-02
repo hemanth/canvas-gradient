@@ -66,7 +66,7 @@ Checkout the live [demo](http://requirebin.com/?gist=020e9257b98e22fa90ee).
 
 
 ```js
-var cnvsGrad = require('canvas-gradaint');
+var cnvsGrad = require('canvas-gradient');
 
 //canvas setup
 var canvas  =  document.createElement('canvas');
