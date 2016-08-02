@@ -1,6 +1,6 @@
 {
   "name": "canvas-gradient",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Gradient with canvas.",
   "main": "index.js",
   "scripts": {
