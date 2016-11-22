@@ -30,7 +30,7 @@
     "gulp-rename": "^1.2.0",
     "gulp-run": "^1.6.6",
     "gulp-sourcemaps": "^2.2.1",
-    "gulp-watch": "^4.1.0",
+    "gulp-watch": "^4.3.6",
     "mochify": "^2.2.0",
     "imagediff": "~1.0.8"
   }
