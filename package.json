@@ -31,7 +31,7 @@
     "gulp-run": "^1.6.6",
     "gulp-sourcemaps": "^2.2.1",
     "gulp-watch": "^4.1.0",
-    "mochify": "^2.2.0",
+    "mochify": "^3.0.0",
     "imagediff": "~1.0.8"
   }
 }
